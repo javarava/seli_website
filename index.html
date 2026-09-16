@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seli — Nigeria's Video-First Social Commerce Platform</title>
+  <meta name="description"
+    content="Seli Market connects buyers, merchants, and creators through video-first shopping. Secure escrow payments, verified merchants, and rewards with every purchase.">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/outfit/Outfit-Variable.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter/Inter-Variable.woff2">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/seli.css">
+</head>
+
+<body class="seli-about">
+
+  <!-- ── NAVBAR ──────────────────────────────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg seli-nav" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://seli.com.ng/" target="_blank">
+        <img src="./images/seli_logo_200_black.png" alt="Seli" width="90px" height="38">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#platform" role="button" data-bs-toggle="dropdown" aria-expanded="false">Platform</a>
+            <ul class="dropdown-menu seli-dropdown">
+              <li><a class="dropdown-item" href="market.html"><i class="bi bi-bag-heart me-2"></i>Market</a></li>
+              <li><a class="dropdown-item" href="pilot.html"><i class="bi bi-truck me-2"></i>Pilot</a></li>
+              <li><a class="dropdown-item" href="shemi.html"><i class="bi bi-stars me-2"></i>Shemi AI</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="investors.html">Investors</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        </ul>
+        <div class="d-flex gap-3 align-items-center mt-3 mt-lg-0 navbar-buttons">
+          <a href="#" class="btn btn-outline">Sign in</a>
+          <a href="#" class="btn btn-seli-primary">Get started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ────────────────────────────────────────────────────────────────── -->
+  <section class="hero-section">
+    <div class="hero-grid-bg"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-hero">
+        <div class="col-lg-6 pe-lg-5 main-hero-text">
+          <div class="hero-eyebrow mb-3">
+            <span class="eyebrow-pill"><i class="bi bi-lightning-charge-fill me-1"></i>Now live in Lagos</span>
+          </div>
+          <h1 class="hero-headline">
+            Shop and sell through
+            <span class="headline-accent">videos.</span>
+            <!-- Sell to
+          <span class="headline-accent-teal">millions.</span> -->
+          </h1>
+          <p class="hero-sub mt-4">
+            Seli Market is Nigeria's video-first social commerce platform. Watch short videos, buy directly, earn
+            rewards — and if you sell, reach buyers who are already watching.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-5 hero-ctas">
+            <a href="#" class="btn btn-seli-primary btn-lg px-4">
+              <i class="bi bi-bag-heart me-2"></i>Start shopping
+            </a>
+            <a href="category.html" class="btn btn-outline btn-lg px-4">
+              Open your store <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+          <div class="hero-stats mt-5 pt-2">
+            <div class="stat-item text-center">
+              <span class="stat-n">100%</span>
+              <span class="stat-l">Buyer Protection</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item text-center">
+              <span class="stat-n">5.5%<sup class="sup-notes">1</sup></span>
+              <span class="stat-l">Vendor Commission</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item text-center">
+              <span class="stat-n">24H</span>
+              <span class="stat-l">Auto Payouts</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block main-hero-visual">
+          <div class="hero-visual">
+            <div class="phone-mockup-wrap">
+              <div class="phone-mockup">
+                <img src="./images/clips1.png">
+              </div>
+              <div class="phone-glow"></div>
+            </div>
+            <div class="float-card float-card-1">
+              <i class="bi bi-shield-check text-teal"></i>
+              <div>
+                <div class="fc-title">Escrow protected</div>
+                <div class="fc-sub">Your money is safe</div>
+              </div>
+            </div>
+            <div class="float-card float-card-2">
+              <i class="bi bi-coin text-seli-red"></i>
+              <div>
+                <div class="fc-title">Shop-to-Earn</div>
+                <div class="fc-sub">₦500 credited</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--seli-bg)"/></svg>
+  </div> -->
+  </section>
+
+  <!-- ── WHAT IS SELI ─────────────────────────────────────────────────────────── -->
+  <section class="section-pad" id="platform">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="text-center">
+          <h2 class="section-headline">One platform, three products</h2>
+          <p class="section-sub">Everything you need to discover, buy, sell, and deliver — built for Nigeria from the
+            ground up.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="market.html" class="product-card-link">
+            <div class="product-card product-card-market">
+              <div class="pc-logo"><img src="./images/seli_logo_200_black.png" alt="Seli Market" width="70px"></div>
+              <h3 class="pc-title">Seli Market</h3>
+              <p class="pc-desc">Video-first shopping with buyer protection, verified merchants, Shop-to-Earn rewards
+                for buyers. <!-- and Create-to-Earn rewards for creators. --></p>
+              <div class="pc-cta">Learn more <i class="bi bi-arrow-right"></i></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="pilot.html" class="product-card-link">
+            <div class="product-card product-card-delivery">
+              <div class="pc-logo"><img src="./images/pilot_logo_200_black.png" alt="Seli Market" width="80px"></div>
+              <h3 class="pc-title">Seli Pilot</h3>
+              <p class="pc-desc">An integrated logistics network connecting merchants with verified delivery agents for
+                fast, trackable deliveries.</p>
+              <div class="pc-cta">Learn more <i class="bi bi-arrow-right"></i></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="shemi.html" class="product-card-link">
+            <div class="product-card product-card-shemi">
+              <div class="pc-logo"><img src="./images/shemi_light.png" alt="Seli Market" width="35px"></div>
+              <h3 class="pc-title">Shemi AI</h3>
+              <p class="pc-desc">Your AI store assistant — generate engaging videos, writes product titles,
+                descriptions, and tags from photos in seconds.</p>
+              <div class="pc-cta">Learn more <i class="bi bi-arrow-right"></i></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ─────────────────────────────────────────────────────────── -->
+  <!-- .how-pin is the scroll runway: it stays tall while .how-section sticks
+     to the top and cycles through each data-step as the user scrolls. -->
+  <div class="how-pin">
+    <section class="section-pad how-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="text-center">
+            <h2 class="section-headline">Shopping reimagined</h2>
+            <p class="section-sub">From discovery to doorstep, every step is built around trust.</p>
+          </div>
+        </div>
+        <div class="row align-items-top g-5 mt-0">
+          <div class="col-lg-5 mt-0">
+            <div class="how-steps">
+              <div class="how-step step-video active" data-step="1">
+                <i class="bi bi-camera-reels-fill step-icon"></i>
+                <div class="step-body">
+                  <h4 class="step-title">Discover through video</h4>
+                  <p class="step-desc">Scroll a personalised video feed of products from verified merchants. Tap any
+                    video to buy without leaving.</p>
+                </div>
+              </div>
+              <div class="how-step step-escrow" data-step="2">
+                <i class="bi bi-shield-lock-fill step-icon"></i>
+                <div class="step-body">
+                  <h4 class="step-title">Pay into escrow</h4>
+                  <p class="step-desc">Your payment is held securely. If no dispute is raised, funds are automatically
+                    released 24 hours after you confirm delivery. Your money is always protected.</p>
+                </div>
+              </div>
+              <div class="how-step step-track" data-step="3">
+                <i class="bi bi-geo-alt-fill step-icon"></i>
+                <div class="step-body">
+                  <h4 class="step-title">Track your delivery</h4>
+                  <p class="step-desc">Real-time delivery tracking from our network of verified Seli pilots.</p>
+                </div>
+              </div>
+              <div class="how-step step-earn" data-step="4">
+                <i class="bi bi-cash-stack step-icon"></i>
+                <div class="step-body">
+                  <h4 class="step-title">Review and earn<sup class="sup-notes">2</sup></h4>
+                  <p class="step-desc">Post a video review of your purchase. When it drives another sale, you earn
+                    shopping credits — Shop-to-Earn.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 mt-0">
+            <div class="how-visuals">
+              <div class="how-visual is-active" data-step="1">
+                <img src="./images/clips1.png">
+              </div>
+
+              <div class="how-visual d-none" data-step="2">
+                <img src="./images/pilot_logo_1.png">
+              </div>
+
+              <div class="how-visual d-none" data-step="3">
+                <img src="./images/seli_logo_200_white.png">
+              </div>
+
+              <div class="how-visual d-none" data-step="4">
+                <img src="./images/seli_logo_200_black.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ── FOR MERCHANTS ────────────────────────────────────────────────────────── -->
+  <section class="section-pad merchant-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2">
+          <div class="merchant-badge mb-3">For merchants</div>
+          <h2 class="section-headline">Your store, your video, your customers</h2>
+          <p class="section-sub mt-3">Seli gives you a video-first storefront, an AI assistant that writes your product
+            listings, and an analytics dashboard that tells you exactly what is working.</p>
+          <div class="feature-list mt-4">
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-seli-red"></i><span>List unlimited products
+                with video</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-seli-red"></i><span>Shemi writes your titles,
+                descriptions and tags</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-seli-red"></i><span>Log direct sales from order
+                platforms like WhatsApp, and sync your inventory</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-seli-red"></i><span>Integrated Paystack wallet
+                and instant settlements</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-seli-red"></i><span>Verified Seller badge
+                builds buyer trust</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-seli-red"></i><span>Run sponsored campaigns
+                directly from your dashboard</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-seli-red"></i><span>Chat with customers with
+                our in-app messaging</span></div>
+          </div>
+          <div class="d-flex gap-3 mt-5">
+            <a href="category.html" class="btn btn-seli-primary">Open your store</a>
+            <a href="market.html" class="btn btn-outline">Learn more</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="merchant-visual">
+            <div class="dashboard-mock">
+              <div class="dm-header">
+                <div class="dm-logo"><img src="./images/debs_kitchenware_logo.png" alt="Seli" width="90px"></div>
+                <div class="dm-store-details">
+                  <div class="dm-store-name">
+                    <div>Debs Kitchenware</div><i class="bi bi-patch-check-fill verified-icon"
+                      style="color:var(--seli-teal)"></i>
+                  </div>
+                  <div class="dm-store-location">Lagos Island, Lagos</div>
+                </div>
+              </div>
+
+              <div class="dm-performance-area">
+                <div class="dm-title-filter">
+                  <div class="dm-title">Store Performance</div>
+                  <div class="dm-filter">
+                    <div class="dm-filter-title">This Month</div>
+                    <i class="bi bi-caret-down-fill dm-filter-icon"></i>
+                  </div>
+                </div>
+
+                <div class="dm-kpis">
+                  <div class="dm-kpi">
+                    <div class="dk-val">₦3.8m</div>
+                    <div class="dk-label">Revenue</div>
+                    <div class="dk-trend up"><i class="bi bi-arrow-up-right"></i>18%</div>
+                  </div>
+                  <div class="dm-kpi">
+                    <div class="dk-val">84</div>
+                    <div class="dk-label">Orders</div>
+                    <div class="dk-trend up"><i class="bi bi-arrow-up-right"></i>9%</div>
+                  </div>
+                  <div class="dm-kpi">
+                    <div class="dk-val">97%</div>
+                    <div class="dk-label">Fulfilled</div>
+                    <div class="dk-trend up"><i class="bi bi-arrow-up-right"></i>2%</div>
+                  </div>
+                  <div class="dm-kpi">
+                    <div class="dk-val">4.9</div>
+                    <div class="dk-label">Rating</div>
+                    <div class="dk-trend up"><i class="bi bi-arrow-up-right"></i>0.1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="dm-chart-area">
+                <svg viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#16A34A" stop-opacity="0.3" />
+                      <stop offset="100%" stop-color="#00FF00" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M0,70 L40,60 L60,50 L90,40 L120,30 L140,45 L170,30 L200,15 L220,25 L250,10 L280,0 L310,5 L340,8 L340,80 L0,80 Z"
+                    fill="url(#chartGrad)" />
+                  <path
+                    d="M0,70 L40,60 L60,50 L90,40 L120,30 L140,45 L170,30 L200,15 L220,25 L250,10 L280,0 L310,5 L340,8"
+                    fill="none" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="dm-bestsellers-area">
+                <div class="dm-title">Bestselling Products</div>
+                <div class="dm-bestseller-chart">
+                  <div class="dmb-row">
+                    <span class="dmb-rank is-top">1</span>
+                    <img class="dmb-thumb" src="./images/debs_donnor_cookware.webp" alt="DONNOR Ceramic Cookware Set">
+                    <div class="dmb-body">
+                      <div class="dmb-title">DONNOR Ceramic Cookware Set</div>
+                      <div class="dmb-metric">48 sold</div>
+                      <div class="dmb-track">
+                        <div class="dmb-fill" style="width:100%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dmb-row">
+                    <span class="dmb-rank">2</span>
+                    <img class="dmb-thumb" src="./images/knife_set.jpg" alt="MAD SHARK Stainless Steel Knife Set 5PC">
+                    <div class="dmb-body">
+                      <div class="dmb-title">MAD SHARK Stainless Steel Knife Set 5PC</div>
+                      <div class="dmb-metric">40 sold</div>
+                      <div class="dmb-track">
+                        <div class="dmb-fill" style="width:78%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dmb-row">
+                    <span class="dmb-rank">3</span>
+                    <img class="dmb-thumb" src="./images/electric_kettle.jpg"
+                      alt="Rusell Hobbs Brushed Stainless Steel Electric Kettle">
+                    <div class="dmb-body">
+                      <div class="dmb-title">Rusell Hobbs Brushed Stainless Steel Electric Kettle</div>
+                      <div class="dmb-metric">24 sold</div>
+                      <div class="dmb-track">
+                        <div class="dmb-fill" style="width:43%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SHEMI SECTION ────────────────────────────────────────────────────────── -->
+  <section class="section-pad shemi-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="shemi-badge mb-3"><i class="bi bi-stars me-2"></i>Shemi AI</div>
+          <div class="shemi-logo mb-3"><img src="./images/shemi_light.png" />
+          </div>
+          <h2 class="section-headline">Upload a photo. Get a listing.</h2>
+          <p class="section-sub mt-3">Shemi can create high-converting product descriptions from just a product photo,
+            generate high-quality, professional product photos from your original photo, or both at once.</p>
+          <div class="shemi-capabilities mt-4">
+            <div class="cap-row">
+              <div class="cap-dot" style="background:var(--seli-teal)"></div><span>Product title with 3 variants</span>
+            </div>
+            <div class="cap-row">
+              <div class="cap-dot" style="background:var(--seli-red)"></div><span>Full product description in your tone.
+                It can also add pidgin-English</span>
+            </div>
+            <div class="cap-row">
+              <div class="cap-dot" style="background:var(--seli-lime)"></div><span>10 search-optimised tags</span>
+            </div>
+            <!-- <div class="cap-row"><div class="cap-dot" style="background:var(--seli-orange)"></div><span>SEO quality score out of 100</span></div> -->
+            <div class="cap-row">
+              <div class="cap-dot" style="background:#A78BFA"></div><span>Suggested platform category</span>
+            </div>
+          </div>
+          <a href="shemi.html" class="btn btn-purple mt-5">Learn more</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="shemi-visual">
+            <div class="shemi-card">
+              <div class="shemi-card-header">
+                <div class="shemi-avatar"><img src="./images/shemi_light.png" width="48px" height="48px"></div>
+                <div>
+                  <div class="shemi-name-text">Ask Shemi</div>
+                  <div class="shemi-sub-text">Your AI Assistant</div>
+                </div>
+
+              </div>
+              <div class="shemi-input">
+                <div class="shemi-input-label">Uploaded photo</div>
+                <div class="shemi-input-photo"><img src="./images/handcrafted-leather-bag.jpg" width="80px" /></div>
+              </div>
+              <div class="shemi-output mt-3">
+                <div class="shemi-output-label">Product title</div>
+                <div class="shemi-output-value">Women's Alligator Pattern Leather Tote Bag - Elegant Brown Top-Handle
+                  Shoulder Purse with Detachable Strap</div>
+              </div>
+              <div class="shemi-output mt-3">
+                <div class="shemi-output-label">Tags generated</div>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                  <span class="shemi-tag">women's brown tote bag</span>
+                  <span class="shemi-tag">alligator pattern handbag</span>
+                  <span class="shemi-tag">crocodile embossed purse</span>
+                  <span class="shemi-tag">designer style shoulder bag</span>
+                  <span class="shemi-tag">luxury handbag</span>
+                  <span class="shemi-tag">genuine leather handbag</span>
+                </div>
+              </div>
+              <button class="btn btn-purple w-100 mt-4 disabled">Apply to product listing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ─────────────────────────────────────────────────────────── -->
+  <section class="section-pad section-testimonial">
+    <div class="container">
+      <div class="row justify-content-center mb-5 sec-headline">
+        <div class="col-lg-6 text-center">
+          <h2 class="section-headline">What sellers and buyers say</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"Before Seli, I was selling on WhatsApp and Instagram and chasing customers for payment.
+              Now my store runs itself. Orders come in while I sleep."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#FFF0F5;color:#E91E63">AK</div>
+              <div>
+                <div class="t-name">Adaobi Kosisochukwu</div>
+                <div class="t-role">Fashion merchant, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card testimonial-card-featured">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"The buyer protection feature is what made me trust it. I paid, the package didn't arrive,
+              I raised a dispute and got my full refund within 24 hours. That doesn't happen anywhere else."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#E8F5E9;color:#2E7D32">TK</div>
+              <div>
+                <div class="t-name">Jide Kareem</div>
+                <div class="t-role">Buyer, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"Shemi wrote my first 50 product listings in one afternoon. The SEO scores are real — my
+              products started showing up in search within a week of going live."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#E3F2FD;color:#1565C0">SB</div>
+              <div>
+                <div class="t-name">Sade Balogun</div>
+                <div class="t-role">Beauty merchant, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA SECTION ─────────────────────────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-glow"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center position-relative">
+            <h2 class="cta-headline">Everyone is watching. Are you selling?</h2>
+            <p class="cta-sub">Join verified merchants already growing their business on Seli Market.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+              <a href="#" class="btn btn-cta-white btn-lg px-5">Open your free store</a>
+              <a href="#" class="btn btn-cta-outline btn-lg px-5">Download the app</a>
+            </div>
+            <div class="app-badges mt-4">
+              <a href="#">
+                <div class="app-badge">
+                  <span class="store-icon"><img src="images/google_play_icon.png" /></span>
+                  <div class="store-text">Google Play</div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="app-badge">
+                  <span class="store-icon"><img src="images/appstore_icon_white.png" /></span>
+                  <div class="store-text">App Store</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────────────────────────────────── -->
+  <footer class="seli-footer">
+    <div class="container">
+      <div class="row g-5 pb-5">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-4">
+            <a class="" href="https://seli.com.ng/" target="_blank">
+              <img src="./images/seli_logo_200_white.png" alt="Seli">
+            </a>
+          </div>
+          <p class="footer-about">Nigeria's video-first social commerce platform. Discover, buy, sell, and earn — all in
+            one place.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Platform</div>
+          <ul class="footer-links">
+            <li><a href="market.html">Seli Market</a></li>
+            <li><a href="pilot.html">Seli Pilot</a></li>
+            <li><a href="shemi.html">Shemi AI</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Help</div>
+          <ul class="footer-links">
+            <li><a href="https://help.seli.com.ng/" target="_blank" rel="noopener">Help Center</a></li>
+            <li><a href="market.html">Open a store</a></li>
+            <li><a href="https://help.seli.com.ng/seli-market/opening-a-store.html" target="_blank" rel="noopener">Merchant guide</a></li>
+            <li><a href="https://help.seli.com.ng/seli-market/verified-seller-program.html" target="_blank" rel="noopener">Verified Seller</a></li>
+            <li><a href="pilot.html">Become a Pilot</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html">About Seli</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Legal</div>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="escrow-policy.html">Escrow Policy</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <span class="footer-copy">© 2026 Seli Trading Company. All rights reserved.</span>
+          <div class="footer-flags d-flex gap-2 align-items-center">
+            <span class="flag-pill">🇳🇬 Nigeria</span>
+            <span class="footer-copy" style="opacity:0.9">· More countries coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/seli.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shemi AI — Your AI Store Assistant on Seli Market</title>
+  <meta name="description"
+    content="Shemi is the AI assistant built into Seli Market. Upload a product photo and get a full listing — title, description, tags, and even professional product photos — in seconds.">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/outfit/Outfit-Variable.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter/Inter-Variable.woff2">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/seli.css">
+  <link rel="stylesheet" href="css/category.css">
+</head>
+
+<body class="seli-category page-shemi">
+
+  <!-- ── NAVBAR ──────────────────────────────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg seli-nav" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://seli.com.ng/" target="_blank">
+        <img src="./images/seli_logo_200_black.png" alt="Seli" width="90px" height="38">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="index.html#platform" role="button" data-bs-toggle="dropdown" aria-expanded="false">Platform</a>
+            <ul class="dropdown-menu seli-dropdown">
+              <li><a class="dropdown-item" href="market.html"><i class="bi bi-bag-heart me-2"></i>Market</a></li>
+              <li><a class="dropdown-item" href="pilot.html"><i class="bi bi-truck me-2"></i>Pilot</a></li>
+              <li><a class="dropdown-item active" href="shemi.html"><i class="bi bi-stars me-2"></i>Shemi AI</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="investors.html">Investors</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        </ul>
+        <div class="d-flex gap-3 align-items-center mt-3 mt-lg-0 navbar-buttons">
+          <a href="#" class="btn btn-outline">Sign in</a>
+          <a href="#" class="btn btn-seli-primary">Get started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO (centered) ───────────────────────────────────────────────────── -->
+  <section class="hero-section cat-hero">
+    <div class="hero-grid-bg"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="hero-eyebrow mb-5">
+            <span class="eyebrow-pill"><i class="bi bi-stars me-1"></i>AI-powered listings</span>
+          </div>
+          <div class="shemi-logo mb-4"><img src="./images/shemi_light.png" alt="Shemi AI"></div>
+          <h1 class="hero-headline">
+            Upload a photo. <span class="headline-accent">Get a listing.</span>
+          </h1>
+          <p class="hero-sub mt-4">
+            Shemi is the AI assistant built into Seli Market. Take a photo of any product and get a full, sell-ready
+            listing — title, description, tags, and professional images — generated in seconds.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-5 hero-ctas">
+            <a href="#for-merchants" class="btn btn-purple btn-lg px-4">
+              <i class="bi bi-stars me-2"></i>Try Shemi free
+            </a>
+            <a href="#features" class="btn btn-outline btn-lg px-4">
+              See what it can do <i class="bi bi-arrow-down ms-2"></i>
+            </a>
+          </div>
+          <div class="hero-stats mt-5 pt-2">
+            <div class="stat-item text-center">
+              <span class="stat-n">30s</span>
+              <span class="stat-l">Per listing</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item text-center">
+              <span class="stat-n">3</span>
+              <span class="stat-l">Title variants</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item text-center">
+              <span class="stat-n">10</span>
+              <span class="stat-l">SEO tags</span>
+            </div>
+          </div>
+          <div class="cat-chips">
+            <a class="cat-chip"><i class="bi bi-lightning-charge-fill" style="color:var(--seli-orange)"></i>Instant listings</a>
+            <a class="cat-chip"><i class="bi bi-camera" style="color:var(--seli-turquoise)"></i>Product photos</a>
+            <a class="cat-chip"><i class="bi bi-search" style="color:var(--seli-deep-green)"></i>SEO tags</a>
+            <a class="cat-chip"><i class="bi bi-translate" style="color:var(--seli-purple)"></i>Pidgin-English</a>
+            <a class="cat-chip"><i class="bi bi-bullseye" style="color:var(--seli-red)"></i>Category suggestion</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRUST STRIP (dark band — Shemi-specific values) ────────────────────── -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3">
+          <div class="trust-item">
+            <i class="bi bi-lightning-charge-fill trust-icon" style="color:var(--seli-orange)"></i>
+            <div class="trust-title">Instant listings</div>
+            <div class="trust-desc">From photo to a live, sell-ready listing in under a minute.</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="trust-item">
+            <i class="bi bi-camera trust-icon" style="color:var(--seli-turquoise)"></i>
+            <div class="trust-title">Professional photos</div>
+            <div class="trust-desc">Studio-quality product images generated straight from your original photo.</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="trust-item">
+            <i class="bi bi-search trust-icon" style="color:var(--seli-deep-green)"></i>
+            <div class="trust-title">Search-optimised</div>
+            <div class="trust-desc">Every listing is packed with real SEO tags that help buyers find it fast.</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="trust-item">
+            <i class="bi bi-translate trust-icon" style="color:var(--seli-purple)"></i>
+            <div class="trust-title">Your voice</div>
+            <div class="trust-desc">Descriptions match your tone — formal, casual, or even pidgin-English.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHAT IS SHEMI AI ──────────────────────────────────────────────────── -->
+  <section class="section-pad section-m-reverse">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 m-reverse-text">
+          <span class="merchant-badge mb-3" style="background:rgba(209,0,209,0.08);color:var(--seli-purple);border:1px solid rgba(209,0,209,0.25)"><i class="bi bi-stars me-2"></i>AI assistant</span>
+          <h2 class="section-headline">From photo to listing — in seconds</h2>
+          <p class="section-sub mt-3">
+            Upload any product photo into Seli Market and Shemi takes over. It recognises the item, writes a
+            conversion-focused title, a full description in your tone, and generates 10 SEO tags — so your listing
+            starts performing from the moment it goes live.
+          </p>
+          <p class="section-sub mt-3" style="color:var(--text-secondary);font-size:1.05rem">
+            You can also ask it to generate professional product photos from your original image — so you get
+            studio-quality shots without hiring a photographer.
+          </p>
+          <a href="#for-merchants" class="btn btn-purple mt-3">Try Shemi free</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="cat-section-visual">
+            <div class="shemi-card">
+              <div class="shemi-card-header">
+                <div class="shemi-avatar"><img src="./images/shemi_light.png" width="44px" height="44px"></div>
+                <div>
+                  <div class="shemi-name-text">Ask Shemi</div>
+                  <div class="shemi-sub-text">Your AI Assistant</div>
+                </div>
+              </div>
+              <div class="shemi-input">
+                <div class="shemi-input-label">Uploaded photo</div>
+                <div class="shemi-input-photo"><img src="./images/handcrafted-leather-bag.jpg" width="80px"></div>
+              </div>
+              <div class="shemi-output mt-3">
+                <div class="shemi-output-label">Product title</div>
+                <div class="shemi-output-value">Women's Alligator Pattern Leather Tote Bag — Elegant Brown Top-Handle
+                  Shoulder Purse with Detachable Strap</div>
+              </div>
+              <div class="shemi-output mt-3">
+                <div class="shemi-output-label">Tags generated</div>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                  <span class="shemi-tag">women's brown tote bag</span>
+                  <span class="shemi-tag">alligator pattern handbag</span>
+                  <span class="shemi-tag">crocodile embossed purse</span>
+                  <span class="shemi-tag">designer style shoulder bag</span>
+                  <span class="shemi-tag">luxury handbag</span>
+                  <span class="shemi-tag">genuine leather handbag</span>
+                </div>
+              </div>
+              <button class="btn btn-purple w-100 mt-4">Apply to product listing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS (static steps) ───────────────────────────────────────── -->
+  <section class="section-pad bg-alt">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="text-center">
+          <h2 class="section-headline">How Shemi works</h2>
+          <p class="section-sub">From your camera roll to a live listing in four steps.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card">
+            <div class="sc-num">1</div>
+            <h4 class="sc-title">Upload a photo</h4>
+            <p class="sc-desc">Snap a picture of any product or pick one from your gallery. One photo is all Shemi
+              needs.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card">
+            <div class="sc-num">2</div>
+            <h4 class="sc-title">Shemi reads the product</h4>
+            <p class="sc-desc">AI vision recognises the item, its material, style, and details — so the listing
+              is accurate.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card">
+            <div class="sc-num">3</div>
+            <h4 class="sc-title">Get the full listing</h4>
+            <p class="sc-desc">A sell-ready title, a full description in your tone, and 10 SEO tags — generated
+              instantly.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card">
+            <div class="sc-num">4</div>
+            <h4 class="sc-title">Review &amp; publish</h4>
+            <p class="sc-desc">Make any tweaks, apply the AI content to your product, and publish — your listing
+              starts selling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOR MERCHANTS & CREATORS ──────────────────────────────────────────── -->
+  <section class="section-pad" id="for-merchants">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="merchant-badge mb-3"><i class="bi bi-shop me-2"></i>For merchants &amp; creators</span>
+          <h2 class="section-headline">Listings that sell, built for you by AI</h2>
+          <p class="section-sub mt-3">Shemi removes the biggest bottleneck in selling online — writing the listing.
+            Spend your time on what matters and let AI handle the product copy.</p>
+          <div class="feature-list mt-4">
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Write 50 product
+                listings in an afternoon, not a week</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>AI descriptions
+                genuinely match your brand's tone and style</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Search-optimised tags
+                mean buyers find you faster in the feed</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Professional product
+                photos without the studio bill</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Three title variants
+                so you can choose what converts best</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>AI also suggests the
+                right category — less hunting for the right shelf</span></div>
+          </div>
+          <a href="#" class="btn btn-seli-primary btn-lg px-4 mt-4">
+            <i class="bi bi-stars me-2"></i>Try Shemi free
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <div class="cat-section-visual">
+            <div class="shemi-card">
+              <div class="shemi-card-header">
+                <div class="shemi-avatar"><img src="./images/shemi_light.png" width="44px" height="44px"></div>
+                <div>
+                  <div class="shemi-name-text">Shemi Output</div>
+                  <div class="shemi-sub-text">Professional listing generated</div>
+                </div>
+              </div>
+              <div class="shemi-output">
+                <div class="shemi-output-label">Description</div>
+                <div class="shemi-output-value">Elevate your kitchen with this hand-finished ceramic cookware set — 10
+                  pieces, crafted for even heat distribution and bold, modern colour that looks as good on the table as
+                  it does on the stove. Oven-safe, dishwasher-safe, and built for daily use.</div>
+              </div>
+              <div class="shemi-output mt-3">
+                <div class="shemi-output-label">SEO tags</div>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                  <span class="shemi-tag">ceramic cookware set</span>
+                  <span class="shemi-tag">non-stick kitchen pots</span>
+                  <span class="shemi-tag">modern dinnerware</span>
+                  <span class="shemi-tag">oven safe cookware</span>
+                  <span class="shemi-tag">colourful kitchen set</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MAIN FEATURES GRID ────────────────────────────────────────────────── -->
+  <section class="section-pad bg-alt" id="features">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="text-center">
+          <h2 class="section-headline">Everything Shemi can do</h2>
+          <p class="section-sub">The AI tools that power every Shemi-generated listing.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(249,41,95,0.08);color:var(--seli-red)"><i class="bi bi-card-heading"></i></div>
+            <h4 class="fc-title">AI product titles</h4>
+            <p class="fc-desc">Conversion-focused titles with up to three variants, so you can test what resonates best
+              with buyers.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(209,0,209,0.08);color:var(--seli-purple)"><i class="bi bi-chat-left-text"></i></div>
+            <h4 class="fc-title">Descriptions in your tone</h4>
+            <p class="fc-desc">Whether you sell luxury or everyday goods, Shemi writes copy that matches your brand's
+              voice.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(22,163,74,0.08);color:var(--seli-deep-green)"><i class="bi bi-search"></i></div>
+            <h4 class="fc-title">SEO tags</h4>
+            <p class="fc-desc">10 search-optimised tags generated automatically, helping buyers find your product in
+              search and the video feed.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(27,154,170,0.08);color:var(--seli-turquoise)"><i class="bi bi-camera"></i></div>
+            <h4 class="fc-title">Product photos</h4>
+            <p class="fc-desc">Generate clean, professional product images from your original photo — no studio, no
+              photographer.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(255,202,79,0.12);color:var(--seli-orange)"><i class="bi bi-translate"></i></div>
+            <h4 class="fc-title">Pidgin-English option</h4>
+            <p class="fc-desc">Ask Shemi to write in pidgin-English when your audience speaks it — informal, relatable,
+              and unmistakably local.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(11,14,26,0.06);color:var(--seli-black)"><i class="bi bi-folder"></i></div>
+            <h4 class="fc-title">Category suggestion</h4>
+            <p class="fc-desc">Shemi recommends the right marketplace category for your product, so it appears where
+              buyers are already looking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ──────────────────────────────────────────────────────── -->
+  <section class="section-pad section-testimonial">
+    <div class="container">
+      <div class="row justify-content-center mb-5 sec-headline">
+        <div class="col-lg-6 text-center">
+          <h2 class="section-headline">What sellers say about Shemi</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"Shemi wrote my first 50 product listings in one afternoon. The SEO scores are real — my
+              products started showing up in the feed within a week of going live."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#E3F2FD;color:#1565C0">SB</div>
+              <div>
+                <div class="t-name">Sade Balogun</div>
+                <div class="t-role">Beauty merchant, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card testimonial-card-featured">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"I took one photo of a bag and Shemi wrote the title, the description, and added 'genuine
+              leather handbag' as a tag — which is exactly the phrase buyers were already searching for."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#FFF0F5;color:#E91E63">NU</div>
+              <div>
+                <div class="t-name">Ngozi Uche</div>
+                <div class="t-role">Fashion merchant, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"I asked for pidgin-English and the description came out sounding exactly like how I'd explain
+              the product in person. My buyers engage with it more than anything I wrote myself."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#E8F5E9;color:#2E7D32">TA</div>
+              <div>
+                <div class="t-name">Tunde Abiola</div>
+                <div class="t-role">Groceries merchant, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA SECTION ───────────────────────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-glow"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center position-relative">
+            <h2 class="cta-headline">Stop writing. Start selling.</h2>
+            <p class="cta-sub">Upload your first photo and see what Shemi creates — for free, inside Seli Market.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+              <a href="#" class="btn btn-cta-white btn-lg px-5">Try Shemi free</a>
+              <a href="#" class="btn btn-cta-outline btn-lg px-5">Download the app</a>
+            </div>
+            <div class="app-badges mt-4">
+              <a href="#">
+                <div class="app-badge"><img src="./images/google_play_icon.png" alt="" width="20" class="me-2">Google Play</div>
+              </a>
+              <a href="#">
+                <div class="app-badge"><img src="./images/appstore_icon_white.png" alt="" width="20" class="me-2">App Store</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+  <footer class="seli-footer">
+    <div class="container">
+      <div class="row g-5 pb-5">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-4">
+            <a class="" href="https://seli.com.ng/" target="_blank">
+              <img src="./images/seli_logo_200_white.png" alt="Seli">
+            </a>
+          </div>
+          <p class="footer-about">Nigeria's video-first social commerce platform. Discover, buy, sell, and earn — all
+            in one place.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Platform</div>
+          <ul class="footer-links">
+            <li><a href="market.html">Seli Market</a></li>
+            <li><a href="pilot.html">Seli Pilot</a></li>
+            <li><a href="shemi.html">Shemi AI</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Help</div>
+          <ul class="footer-links">
+            <li><a href="https://help.seli.com.ng/" target="_blank" rel="noopener">Help Center</a></li>
+            <li><a href="market.html">Open a store</a></li>
+            <li><a href="https://help.seli.com.ng/seli-market/opening-a-store.html" target="_blank" rel="noopener">Merchant guide</a></li>
+            <li><a href="https://help.seli.com.ng/seli-market/verified-seller-program.html" target="_blank" rel="noopener">Verified Seller</a></li>
+            <li><a href="pilot.html">Become a Pilot</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html">About Seli</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Legal</div>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="escrow-policy.html">Escrow Policy</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <span class="footer-copy">© 2026 Seli Trading Company. All rights reserved.</span>
+          <div class="footer-flags d-flex gap-2 align-items-center">
+            <span class="flag-pill">🇳🇬 Nigeria</span>
+            <span class="footer-copy" style="opacity:0.9">· More countries coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+
+</html>

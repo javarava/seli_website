@@ -1,0 +1,288 @@
+/* ============================================================
+   Seli website — Category page template styles (css/category.css)
+   Loaded AFTER seli.css so it inherits the design tokens and
+   component styles defined there. Shared by market.html and the
+   other category/section pages (Pilot, Shemi, Help, etc.).
+   ============================================================ */
+
+/* ── BREADCRUMB ─────────────────────────────────────────────── */
+/* Slim strip under the navbar showing the page's place in the
+   site (Home / Seli Market) so category pages feel consistent. */
+.cat-breadcrumb {
+  background: #ffffff;
+  padding: 40px 0px 0 12px;
+}
+.cat-breadcrumb ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.cat-breadcrumb li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.cat-breadcrumb li + li::before {
+  content: '/';
+  opacity: 0.5;
+}
+.cat-breadcrumb a:hover {
+  color: var(--seli-red);
+}
+.cat-breadcrumb .active {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ── CENTERED CATEGORY HERO ─────────────────────────────────── */
+/* Variation of the home hero: content is centered rather than
+   the two-column split, but keeps the same soft gradient bg and
+   headline/stat components from seli.css. */
+.cat-hero {
+  text-align: center;
+  padding: 40px 0;
+}
+.cat-hero .hero-sub {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cat-hero .hero-ctas,
+.cat-hero .hero-stats {
+  justify-content: center;
+}
+
+/* ── CATEGORY CHIPS (below hero) ────────────────────────────── */
+/* Small pills hinting at what the marketplace covers; they are
+   placeholders until dedicated category pages exist. */
+.cat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 34px;
+}
+.cat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: 30px;
+  padding: 9px 18px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.18s ease;
+}
+.cat-chip:hover {
+  border-color: var(--seli-red);
+  color: var(--seli-red);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+.cat-chip i {
+  font-size: 1rem;
+}
+
+/* ── HOW IT WORKS — STATIC STEP CARDS ───────────────────────── */
+/* Simple always-visible numbered cards. Deliberately no pinned
+   scroll behaviour (that effect belongs to the home page's
+   "how it works" section only). */
+.step-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.sc-num {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--seli-red);
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.sc-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.sc-desc {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── SECTION VISUAL HELPER ──────────────────────────────────── */
+/* Centres the illustration column inside two-col sections. */
+.cat-section-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ── BUYER PROTECTION CARD (For buyers visual) ──────────────── */
+/* A composed "what you get as a buyer" card used instead of a
+   screenshot so the page stays clean and on-brand. */
+.protection-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  padding: 40px 30px 50px;
+  width: 100%;
+  max-width: 500px;
+}
+.protection-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.protection-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(27, 154, 170, 0.25);
+  color: var(--seli-turquoise);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.protection-card-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+.protection-card-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.protection-card .feature-list {
+  gap: 20px;
+}
+
+/* ── STOREFRONT GRID (For merchants visual) ─────────────────── */
+/* Two-by-two grid of product tiles that echoes a merchant's
+   video-first storefront on Seli Market. */
+.storefront-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  width: 100%;
+  max-width: 460px;
+}
+.sf-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.sf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.sf-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+.sf-body {
+  padding: 14px 16px;
+}
+.sf-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 6px;
+  /* Truncate long product names to a single line. */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.sf-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--seli-red);
+}
+
+/* ── MAIN FEATURE GRID ──────────────────────────────────────── */
+/* The core feature cards that explain what Seli Market does.
+   This grid is the pattern other category pages will reuse. */
+.cat-feature-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+.cat-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.fc-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+.fc-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.fc-desc {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────────────── */
+/* Match the breakpoints seli.css uses; mainly tighten padding
+   and centre any remaining left-aligned hero bits on mobile. */
+@media (max-width: 991.98px) {
+  .cat-hero {
+    padding-top: 24px;
+  }
+  .cat-section-visual {
+    margin-top: 40px;
+  }
+}

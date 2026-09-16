@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seli Pilot — Fast, Trackable Delivery for Seli Market</title>
+  <meta name="description"
+    content="Seli Pilot is Seli's integrated logistics network connecting merchants with verified delivery agents for fast, code-secured, trackable deliveries — and giving pilots a reliable way to earn.">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/outfit/Outfit-Variable.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter/Inter-Variable.woff2">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/seli.css">
+  <link rel="stylesheet" href="css/category.css">
+</head>
+
+<body class="seli-category">
+
+  <!-- ── NAVBAR ──────────────────────────────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg seli-nav" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://seli.com.ng/" target="_blank">
+        <img src="./images/seli_logo_200_black.png" alt="Seli" width="90px" height="38">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="index.html#platform" role="button" data-bs-toggle="dropdown" aria-expanded="false">Platform</a>
+            <ul class="dropdown-menu seli-dropdown">
+              <li><a class="dropdown-item" href="market.html"><i class="bi bi-bag-heart me-2"></i>Market</a></li>
+              <li><a class="dropdown-item active" href="pilot.html"><i class="bi bi-truck me-2"></i>Pilot</a></li>
+              <li><a class="dropdown-item" href="shemi.html"><i class="bi bi-stars me-2"></i>Shemi AI</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="investors.html">Investors</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        </ul>
+        <div class="d-flex gap-3 align-items-center mt-3 mt-lg-0 navbar-buttons">
+          <a href="#" class="btn btn-outline">Sign in</a>
+          <a href="#" class="btn btn-seli-primary">Get started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO (centered) ───────────────────────────────────────────────────── -->
+  <section class="hero-section cat-hero">
+    <div class="hero-grid-bg"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="hero-eyebrow mb-5">
+            <span class="eyebrow-pill"><i class="bi bi-truck me-1"></i>Integrated delivery network</span>
+          </div>
+          <h1 class="hero-headline">
+            Fast, tracked delivery <span class="headline-accent">by verified Seli pilots.</span>
+          </h1>
+          <p class="hero-sub mt-4">
+            Seli Pilot is the delivery engine behind Seli Market. It connects merchants and buyers with a network of
+            verified delivery agents — so every order gets picked up fast, tracked live, and handed over securely.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-5 hero-ctas">
+            <a href="#features" class="btn btn-seli-primary btn-lg px-4">
+              <i class="bi bi-person-check me-2"></i>Become a pilot
+            </a>
+            <a href="#merchants" class="btn btn-outline btn-lg px-4">
+              Get your package delivered <i class="bi bi-arrow-down ms-2"></i>
+            </a>
+          </div>
+          <div class="hero-stats mt-5 pt-2">
+            <div class="stat-item text-center">
+              <span class="stat-n">24H</span>
+              <span class="stat-l">Same-Day Delivery</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item text-center">
+              <span class="stat-n">100%</span>
+              <span class="stat-l">Code-Secured Handoffs</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item text-center">
+              <span class="stat-n">Live</span>
+              <span class="stat-l">Pickup-to-Door Tracking</span>
+            </div>
+          </div>
+          <div class="cat-chips">
+            <a class="cat-chip"><i class="bi bi-patch-check-fill text-teal"></i>Verified pilots</a>
+            <a class="cat-chip"><i class="bi bi-geo-alt-fill text-seli-red"></i>Live tracking</a>
+            <a class="cat-chip"><i class="bi bi-key" style="color:var(--seli-turquoise)"></i>Delivery codes</a>
+            <a class="cat-chip"><i class="bi bi-camera" style="color:var(--seli-deep-green)"></i>Proof of delivery</a>
+            <a class="cat-chip"><i class="bi bi-wallet2" style="color:var(--seli-orange)"></i>Pilot earnings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRUST STRIP (dark band) ────────────────────────────────────────────── -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3">
+          <div class="trust-item">
+            <i class="bi bi-patch-check-fill trust-icon" style="color:var(--seli-teal)"></i>
+            <div class="trust-title">Verified pilots</div>
+            <div class="trust-desc">Every delivery agent is vetted before they can carry a package.</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="trust-item">
+            <i class="bi bi-geo-alt-fill trust-icon" style="color:var(--seli-turquoise)"></i>
+            <div class="trust-title">Live tracking</div>
+            <div class="trust-desc">Merchants and buyers see exactly where the package is, in real time.</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="trust-item">
+            <i class="bi bi-key trust-icon" style="color:var(--seli-orange)"></i>
+            <div class="trust-title">Secure handoffs</div>
+            <div class="trust-desc">Pickup and delivery are confirmed with unique 4-digit codes.</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="trust-item">
+            <i class="bi bi-camera trust-icon" style="color:var(--seli-red)"></i>
+            <div class="trust-title">Proof of delivery</div>
+            <div class="trust-desc">Photos and signatures captured at the door complete the chain of custody.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHAT IS SELI PILOT ────────────────────────────────────────────────── -->
+  <section class="section-pad section-m-reverse">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 m-reverse-text">
+          <span class="merchant-badge mb-3" style="background:rgba(27,154,170,0.08);color:var(--seli-turquoise);border:1px solid rgba(27,154,170,0.25)"><i class="bi bi-truck me-2"></i>The logistics network</span>
+          <h2 class="section-headline">Delivery that runs itself — from pickup to your door</h2>
+          <p class="section-sub mt-3">
+            When an order is placed on Seli Market, a delivery job is created. The nearest available pilot accepts,
+            picks up the package with a secure code, and takes it straight to the recipient — every step tracked live.
+          </p>
+          <p class="section-sub mt-3" style="color:var(--text-secondary);font-size:1.05rem">
+            For merchants it removes the headache of logistics and chases. For pilots it turns spare time into a
+            reliable income stream.
+          </p>
+          <a href="#pilots" class="btn btn-seli-secondary mt-3">Download the pilot app</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="cat-section-visual">
+            <div class="phone-mockup-wrap">
+              <div class="phone-mockup">
+                <img src="./images/pilot_logo_1.png" alt="Seli Pilot app">
+              </div>
+              <div class="phone-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS (static steps) ───────────────────────────────────────── -->
+  <section class="section-pad bg-alt">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="text-center">
+          <h2 class="section-headline">How delivery works</h2>
+          <p class="section-sub">A secure, trackable journey for every package.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card">
+            <div class="sc-num">1</div>
+            <h4 class="sc-title">Create a delivery job</h4>
+            <p class="sc-desc">When a merchant ships an order, a delivery job is created with pickup and delivery
+              details automatically.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card">
+            <div class="sc-num">2</div>
+            <h4 class="sc-title">A pilot accepts</h4>
+            <p class="sc-desc">Verified pilots near the pickup point accept the job in-app — no more waiting on
+              couriers.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card">
+            <div class="sc-num">3</div>
+            <h4 class="sc-title">Secure pickup</h4>
+            <p class="sc-desc">The pilot confirms pickup with a unique code, then the package moves — tracked live all
+              the way.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card">
+            <div class="sc-num">4</div>
+            <h4 class="sc-title">Handover &amp; proof</h4>
+            <p class="sc-desc">Delivery is confirmed with another code plus photo or signature proof, then the pilot is
+              paid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOR MERCHANTS & BUYERS ────────────────────────────────────────────── -->
+  <section class="section-pad" id="merchants">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="merchant-badge mb-3"><i class="bi bi-box-seam me-2"></i>For merchants &amp; buyers</span>
+          <h2 class="section-headline">Every package delivered — fast and accounted for</h2>
+          <p class="section-sub mt-3">Seli Pilot plugs directly into the marketplace, so shipping is seamless for
+            sellers and reassuring for buyers.</p>
+          <div class="feature-list mt-4">
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Same-day pickup with no
+                manual logistics on your side</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Live tracking shared with
+                you and your customer</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Code-secured pickup and
+                delivery confirm who has the package</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Proof-of-delivery photos
+                stored for every complete order</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Built-in returns — pilots
+                collect packages heading back to the store</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Escrow payments release
+                on delivery confirmation, keeping funds safe</span></div>
+          </div>
+          <a href="#" class="btn btn-seli-primary btn-lg px-4 mt-4">
+            <i class="bi bi-truck me-2"></i>Send a package
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <div class="cat-section-visual">
+            <div class="protection-card">
+              <div class="protection-card-head">
+                <div class="protection-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <div class="protection-card-title">On the move</div>
+                  <div class="protection-card-sub">Live delivery job</div>
+                </div>
+              </div>
+              <div class="feature-list">
+                <div class="feature-item"><i class="bi bi-box-seam text-teal"></i><span>Order #SEL-2481 · Debs Kitchenware</span></div>
+                <div class="feature-item"><i class="bi bi-geo-alt-fill" style="color:var(--seli-red)"></i><span>Pickup: Lagos Island, Lagos</span></div>
+                <div class="feature-item"><i class="bi bi-geo-alt" style="color:var(--seli-turquoise)"></i><span>Delivery: Yaba, Lagos</span></div>
+                <div class="feature-item"><i class="bi bi-person-check" style="color:var(--seli-deep-green)"></i><span>Pilot request accepted — en route</span></div>
+                <div class="feature-item"><i class="bi bi-key" style="color:var(--seli-orange)"></i><span>Delivery code 4821 · proof on arrival</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOR PILOTS ────────────────────────────────────────────────────────── -->
+  <section class="section-pad bg-alt" id="pilots">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2">
+          <span class="merchant-badge mb-3" style="background:rgba(22,163,74,0.08);color:var(--seli-deep-green);border:1px solid rgba(22,163,74,0.25)"><i class="bi bi-person-check me-2"></i>For pilots</span>
+          <h2 class="section-headline">Turn your rides into reliable income</h2>
+          <p class="section-sub mt-3">The Seli Pilot app is built for anyone with a bike or car who wants to earn by
+            delivering. Pick jobs near you, on your own schedule.</p>
+          <div class="feature-list mt-4">
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>See available jobs with
+                earnings up front, then accept or decline</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Pickup and delivery codes
+                give you a transparent, secure handoff</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Track earnings in your
+                wallet and withdraw whenever you want</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Review ratings build your
+                profile and unlock more jobs</span></div>
+            <div class="feature-item"><i class="bi bi-check-circle-fill text-teal"></i><span>Handle returns and earn on
+                the journey back to the merchant</span></div>
+          </div>
+          <div class="d-flex gap-3 mt-5">
+            <a href="#" class="btn btn-seli-primary">Become a pilot</a>
+            <a href="#" class="btn btn-outline">See how it works</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="cat-section-visual">
+            <div class="protection-card">
+              <div class="protection-card-head">
+                <div class="protection-card-icon" style="background:rgba(22,163,74,0.08);color:var(--seli-deep-green)"><i class="bi bi-wallet2"></i></div>
+                <div>
+                  <div class="protection-card-title">This week</div>
+                  <div class="protection-card-sub">Your pilot earnings</div>
+                </div>
+              </div>
+              <div class="feature-list">
+                <div class="feature-item"><i class="bi bi-truck text-teal"></i><span>18 deliveries completed</span></div>
+                <div class="feature-item"><i class="bi bi-currency-dollar" style="color:var(--seli-deep-green)"></i><span>₦72,400 earned in Fares</span></div>
+                <div class="feature-item"><i class="bi bi-star-fill" style="color:var(--seli-orange)"></i><span>4.9 rating from 61 jobs</span></div>
+                <div class="feature-item"><i class="bi bi-bank" style="color:var(--seli-turquoise)"></i><span>Withdraw to your bank, anytime</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MAIN FEATURES GRID ────────────────────────────────────────────────── -->
+  <section class="section-pad" id="features">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="text-center">
+          <h2 class="section-headline">Everything in the network</h2>
+          <p class="section-sub">The main features that make Seli Pilot fast, safe, and dependable.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(249,41,95,0.08);color:var(--seli-red)"><i class="bi bi-patch-check-fill"></i></div>
+            <h4 class="fc-title">Verified pilot network</h4>
+            <p class="fc-desc">Background-checked, rated delivery agents ensure your package is always in trusted
+              hands.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(27,154,170,0.08);color:var(--seli-turquoise)"><i class="bi bi-geo-alt-fill"></i></div>
+            <h4 class="fc-title">Live tracking</h4>
+            <p class="fc-desc">Real-time location from pickup to delivery, visible to merchants, buyers, and pilots.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(255,202,79,0.12);color:var(--seli-orange)"><i class="bi bi-key"></i></div>
+            <h4 class="fc-title">Secure delivery codes</h4>
+            <p class="fc-desc">Unique 4-digit codes confirm every pickup and handover, so nobody guesses where the
+              package went.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(22,163,74,0.08);color:var(--seli-deep-green)"><i class="bi bi-camera"></i></div>
+            <h4 class="fc-title">Proof of delivery</h4>
+            <p class="fc-desc">Photos and signatures captured at the door complete the proof trail for every order.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(209,0,209,0.08);color:var(--seli-purple)"><i class="bi bi-arrow-left-right"></i></div>
+            <h4 class="fc-title">Escrow-safe handoffs</h4>
+            <p class="fc-desc">Funds stay in escrow until delivery is confirmed — protecting buyers and paying out
+              accurately.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cat-feature-card">
+            <div class="fc-icon" style="background:rgba(11,14,26,0.06);color:var(--seli-black)"><i class="bi bi-wallet2"></i></div>
+            <h4 class="fc-title">Pilot wallet &amp; payouts</h4>
+            <p class="fc-desc">Earnings land straight in your wallet with instant, flexible withdrawals to your bank.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ──────────────────────────────────────────────────────── -->
+  <section class="section-pad bg-alt section-testimonial">
+    <div class="container">
+      <div class="row justify-content-center mb-5 sec-headline">
+        <div class="col-lg-6 text-center">
+          <h2 class="section-headline">What merchants and pilots say</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"I used to bundle every order and drive to the park myself. Now I schedule a pickup in
+              the app and the tracking link does the talking for me."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#FFF0F5;color:#E91E63">DN</div>
+              <div>
+                <div class="t-name">Debs Nwachukwu</div>
+                <div class="t-role">Kitchenware merchant, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card testimonial-card-featured">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"The delivery code is the selling point. I know the right person picked up my order and
+              the right person signed on the other side. Zero missing packages since I joined."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#E8F5E9;color:#2E7D32">FM</div>
+              <div>
+                <div class="t-name">Farouk Muhammed</div>
+                <div class="t-role">Buyer, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">"I ride on weekends and it covers my fuel plus extra. I see the fare before I accept,
+              and my earnings hit my bank same day."</p>
+            <div class="t-author">
+              <div class="t-av" style="background:#E3F2FD;color:#1565C0">TI</div>
+              <div>
+                <div class="t-name">Tobi Idowu</div>
+                <div class="t-role">Pilot, Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA SECTION ───────────────────────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-glow"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center position-relative">
+            <h2 class="cta-headline">Every order, delivered.</h2>
+            <p class="cta-sub">Join the network delivering Seli Market — as a merchant, a buyer, or a pilot.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+              <a href="#" class="btn btn-cta-white btn-lg px-5">Become a pilot</a>
+              <a href="#" class="btn btn-cta-outline btn-lg px-5">Book a delivery</a>
+            </div>
+            <div class="app-badges mt-4">
+              <a href="#">
+                <div class="app-badge"><img src="./images/google_play_icon.png" alt="" width="20" class="me-2">Google Play</div>
+              </a>
+              <a href="#">
+                <div class="app-badge"><img src="./images/appstore_icon_white.png" alt="" width="20" class="me-2">App Store</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+  <footer class="seli-footer">
+    <div class="container">
+      <div class="row g-5 pb-5">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-4">
+            <a class="" href="https://seli.com.ng/" target="_blank">
+              <img src="./images/seli_logo_200_white.png" alt="Seli">
+            </a>
+          </div>
+          <p class="footer-about">Nigeria's video-first social commerce platform. Discover, buy, sell, and earn — all
+            in one place.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Platform</div>
+          <ul class="footer-links">
+            <li><a href="market.html">Seli Market</a></li>
+            <li><a href="pilot.html">Seli Pilot</a></li>
+            <li><a href="shemi.html">Shemi AI</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Help</div>
+          <ul class="footer-links">
+            <li><a href="https://help.seli.com.ng/" target="_blank" rel="noopener">Help Center</a></li>
+            <li><a href="market.html">Open a store</a></li>
+            <li><a href="https://help.seli.com.ng/seli-market/opening-a-store.html" target="_blank" rel="noopener">Merchant guide</a></li>
+            <li><a href="https://help.seli.com.ng/seli-market/verified-seller-program.html" target="_blank" rel="noopener">Verified Seller</a></li>
+            <li><a href="pilot.html">Become a Pilot</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html">About Seli</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Legal</div>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="escrow-policy.html">Escrow Policy</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <span class="footer-copy">© 2026 Seli Trading Company. All rights reserved.</span>
+          <div class="footer-flags d-flex gap-2 align-items-center">
+            <span class="flag-pill">🇳🇬 Nigeria</span>
+            <span class="footer-copy" style="opacity:0.9">· More countries coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+
+</html>

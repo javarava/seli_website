@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escrow Policy (Seli Buyer Protection) — Seli</title>
+  <meta name="description"
+    content="How Seli's escrow and Buyer Protection work: where buyer funds are held, when they are released to sellers, what Buyer Claims cover, and how claims are resolved.">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/outfit/Outfit-Variable.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter/Inter-Variable.woff2">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/seli.css">
+  <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/company.css">
+</head>
+
+<body class="seli-category">
+
+  <!-- ── NAVBAR ──────────────────────────────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg seli-nav" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://seli.com.ng/" target="_blank">
+        <img src="./images/seli_logo_200_black.png" alt="Seli" width="90px" height="38">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html#platform" role="button" data-bs-toggle="dropdown" aria-expanded="false">Platform</a>
+            <ul class="dropdown-menu seli-dropdown">
+              <li><a class="dropdown-item" href="market.html"><i class="bi bi-bag-heart me-2"></i>Market</a></li>
+              <li><a class="dropdown-item" href="pilot.html"><i class="bi bi-truck me-2"></i>Pilot</a></li>
+              <li><a class="dropdown-item" href="shemi.html"><i class="bi bi-stars me-2"></i>Shemi AI</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="investors.html">Investors</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        </ul>
+        <div class="d-flex gap-3 align-items-center mt-3 mt-lg-0 navbar-buttons">
+          <a href="#" class="btn btn-outline">Sign in</a>
+          <a href="#" class="btn btn-seli-primary">Get started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────────────────────────────── -->
+  <section class="hero-section cat-hero">
+    <div class="hero-grid-bg"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="hero-eyebrow mb-5">
+            <span class="eyebrow-pill"><i class="bi bi-shield-check me-1"></i>Legal · Escrow &amp; Buyer Protection</span>
+          </div>
+          <h1 class="hero-headline">
+            Your money is safe <span class="headline-accent">until you're happy.</span>
+          </h1>
+          <p class="hero-sub mt-4">
+            This Escrow Policy explains how Seli protects buyer payments. Funds you pay are held securely and released
+            to the seller only after your order is delivered. If no dispute is raised, escrow funds are
+            <strong>automatically released 24 hours after delivery confirmation</strong> — and this policy explains how
+            Seli Buyer Protection handles things when an order goes wrong.
+          </p>
+          <div class="policy-meta mt-4">Last updated: September 14, 2026 &nbsp;·&nbsp; Applies to: buyers, sellers
+            (merchants) and delivery agents using escrow-protected transactions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TABLE OF CONTENTS ─────────────────────────────────────────────────── -->
+  <section class="section-pad pt-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="policy-toc">
+            <div class="policy-toc-title">Contents</div>
+            <div class="policy-toc-grid">
+              <a href="#what-is-escrow">1. What escrow is</a>
+              <a href="#how-escrow-works">2. How escrow works</a>
+              <a href="#covered">3. What Buyer Protection covers</a>
+              <a href="#not-covered">4. What Buyer Protection does not cover</a>
+              <a href="#raising-claim">5. Raising a Buyer Claim</a>
+              <a href="#resolution">6. How claims are resolved</a>
+              <a href="#sellers">7. Release of funds to sellers</a>
+              <a href="#reversals">8. Chargebacks &amp; reversals</a>
+              <a href="#determinations">9. Determinations &amp; disputes</a>
+              <a href="#other-policies">10. Relationship to other policies</a>
+              <a href="#changes">11. Changes to this policy</a>
+              <a href="#contact">12. Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 1. WHAT IS ESCROW ─────────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="what-is-escrow">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">1. What escrow is</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">When you pay for an order on Seli, your money is not sent straight to the seller.
+              Instead, it is held in escrow by Seli — a safeguarded balance that sits between buyer and seller until
+              the order is completed. This is the foundation of the "<strong>100% Buyer Protection</strong>" promise
+              you see on our marketing pages.</p>
+            <p class="legal-p">Escrow works in three steps:</p>
+            <div class="row g-3 my-2">
+              <div class="col-md-4">
+                <div class="step-card" style="height:100%">
+                  <div class="sc-num">1</div>
+                  <h4 class="sc-title">You pay</h4>
+                  <p class="sc-desc">Your payment is captured and held in escrow — the seller can see the order is
+                    funded but cannot yet touch the money.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="step-card" style="height:100%">
+                  <div class="sc-num" style="background:var(--seli-turquoise)">2</div>
+                  <h4 class="sc-title">Delivery confirmed</h4>
+                  <p class="sc-desc">Your order is delivered and you confirm completion with your delivery code, or the
+                    24-hour Buyer Claims window from delivery confirmation closes without a dispute.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="step-card" style="height:100%">
+                  <div class="sc-num" style="background:var(--seli-deep-green)">3</div>
+                  <h4 class="sc-title">Funds released</h4>
+                  <p class="sc-desc">Escrow automatically releases the amount to the seller, net of fees, 24 hours after delivery
+                    confirmation if no dispute is raised. Buyer funds are only ever released on the conditions in this
+                    policy.</p>
+                </div>
+              </div>
+            </div>
+            <div class="legal-callout"><strong>Important:</strong> Seli holds escrowed funds as a payment-protection
+              mechanism. Escrow is not a bank deposit: it does not earn interest and is not covered by any deposit
+              insurance scheme.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 2. HOW ESCROW WORKS ───────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="how-escrow-works">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">2. How escrow works</h2>
+            <hr class="legal-headrule">
+            <h3 class="legal-h3">2.1 From payment to release</h3>
+            <table class="legal-table">
+              <tr><th>Stage</th><th>What happens</th><th>Who can access the funds</th></tr>
+              <tr>
+                <td><strong>1. Order placed &amp; paid</strong></td>
+                <td>Successful payment moves the order value into escrow; the order becomes "funded" and is sent for
+                  fulfilment and pickup.</td>
+                <td>Neither party can withdraw. Seli holds the funds.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Picked up &amp; delivered</strong></td>
+                <td>The seller prepares the order, Seli Pilot delivers it, and the buyer confirms handover with their
+                  delivery code.</td>
+                <td>Still held in escrow.</td>
+              </tr>
+              <tr>
+                <td><strong>3. 24-hour protection window</strong></td>
+                <td>A 24-hour Buyer Claims window runs from delivery confirmation (shown on your order) during which the
+                  buyer can raise a dispute.</td>
+                <td>Still held in escrow; a dispute pauses auto-release.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Auto-release</strong></td>
+                <td>If no dispute is raised in that 24 hours (or one is resolved in the seller's favour), escrow
+                  automatically releases the order value to the seller, minus fees.</td>
+                <td>Seller receives proceeds; buyer's payment is complete.</td>
+              </tr>
+            </table>
+            <h3 class="legal-h3">2.2 Where escrowed funds sit</h3>
+            <p class="legal-p">Escrowed amounts are recorded on your Seli wallet and held by Seli (or our authorised
+              payment partners) in segregated operational accounts. Card payments sit with the acquiring processor
+              until the transaction settles; the escrow envelope we describe is the commercial hold we manage on top of
+              that settlement.</p>
+            <h3 class="legal-h3">2.3 Seller payouts</h3>
+            <p class="legal-p">Once released, net proceeds are paid out automatically, generally within 24 hours, to
+              the bank account linked to the seller's profile. If payout fails, the amount sits in the seller's wallet
+              until valid details are provided.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3. COVERED ────────────────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="covered">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">3. What Buyer Protection covers</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">Seli Buyer Protection covers orders paid through escrow when a verifiable problem occurs.
+              The covered events are:</p>
+            <ul class="legal-list">
+              <li><strong>Non-delivery</strong> — you paid but the order was never delivered, or the pickup/delivery
+                could not be completed through no fault of yours;</li>
+              <li><strong>Wrong item</strong> — you received a product that is materially different from its listing
+                (different item, wrong size, wrong colour, wrong quantity);</li>
+              <li><strong>Obvious damage</strong> — the product arrived damaged or its packaging was visibly broken
+                such that the product could not be used as described;</li>
+              <li><strong>Material misrepresentation</strong> — the listing description, photos or videos gave a
+                substantially wrong impression of the item (for example condition, origin or authenticity labels);</li>
+              <li><strong>Unauthorised transaction</strong> — a charge on your account that you did not authorise and
+                that resulted from misuse of your account by another person (reported promptly).</li>
+            </ul>
+            <p class="legal-p">For a claim to succeed, you must demonstrate the covered event with credible evidence —
+              usually order history, tracking/confirmation, and photos or videos of what you received.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 4. NOT COVERED ────────────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="not-covered">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">4. What Buyer Protection does not cover</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">Buyer Protection is not a general warranty, insurance policy or money-back guarantee.
+              Claims will not succeed where the issue is, for example:</p>
+            <ul class="legal-list">
+              <li>Buyer's remorse or a change of mind after successful delivery;</li>
+              <li>Post-delivery product performance issues that are ordinary use (wear and tear, battery life,
+                perishable shelf-life), unless the listing warranted otherwise;</li>
+              <li>Damage caused after the delivery code was confirmed and the package released to you;</li>
+              <li>Delivery to an incorrect address or an unavailable recipient provided by you;</li>
+              <li>An order you cancelled after the seller had already purchased stock or was executing fulfilment, or
+                an order you abandoned after delivery was arranged;</li>
+              <li>Claims raised against an order that was not paid via escrow (for example an off-platform or
+                cash-on-delivery transaction);</li>
+              <li>Fraudulent, abusive or repeated claims designed to obtain free products;</li>
+              <li>Failure to preserve and return the product when return is required under the resolution (Section 6);</li>
+              <li>Seller conduct governed by the merchant's own disclosed return policy where that policy is
+                consistent with these Terms.</li>
+            </ul>
+            <div class="legal-callout"><strong>Good-faith use:</strong> Buyer Protection exists to protect genuine
+              buyers. If we detect claim fraud or collusion, we may reject claims, close accounts, and where
+              appropriate report the conduct to law enforcement.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 5. RAISING A CLAIM ────────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="raising-claim">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">5. Raising a Buyer Claim</h2>
+            <hr class="legal-headrule">
+            <ul class="legal-list">
+              <li><strong>When:</strong> within 24 hours of delivery confirmation — the Buyer Claims window shown on your
+                order, which is why escrow auto-releases after that window. For non-delivery, you can raise a claim as
+                soon as the tracking shows no progress past the expected delivery time;</li>
+              <li><strong>Where:</strong> from the order details page in the Seli app (Support → Orders → "Raise a
+                claim"), or by contacting <a href="mailto:support@seli.com.ng">support@seli.com.ng</a>;</li>
+              <li><strong>What you'll provide:</strong> the order reference, a description of the problem, and
+                supporting evidence — clear photos or a short video of the item and packaging, delivery notes, or
+                messages with the seller/pilot;</li>
+              <li><strong>Pause on escrow:</strong> raising a claim pauses any pending release so funds stay where
+                they are while we investigate;</li>
+              <li><strong>Responding to the seller:</strong> the seller is given the chance to respond with their own
+                evidence (e.g. packing video, proof of pickup, delivery logs) before we decide.</li>
+            </ul>
+            <p class="legal-p">You must raise the claim in good faith and provide accurate information. If you later
+              receive, find, or are refunded for the same item in a way that duplicates a refund, you must let us
+              know.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 6. RESOLUTION ────────────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="resolution">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">6. How claims are resolved</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">We review each claim on the evidence from both sides and the order/tracking record. The
+              possible outcomes are:</p>
+            <table class="legal-table">
+              <tr><th>Outcome</th><th>What happens</th><th>Money</th></tr>
+              <tr>
+                <td><strong>Full refund</strong></td>
+                <td>Claim upheld — the order failed materially. We refund the order value to your wallet or original
+                  payment method.</td>
+                <td>Escrow returned to you (or a refund charge raised). Seller doesn't get paid for the order.</td>
+              </tr>
+              <tr>
+                <td><strong>Partial refund</strong></td>
+                <td>Claim partially upheld (e.g. some items of the order were correct, or the deficit is small).</td>
+                <td>A portion is refunded; the rest releases to the seller.</td>
+              </tr>
+              <tr>
+                <td><strong>Return &amp; refund</strong></td>
+                <td>We arrange (where practical) for you to return the item, and refund once a drop-off or pickup is
+                  completed.</td>
+                <td>Refund on completed return; return cost borne per the resolution.</td>
+              </tr>
+              <tr>
+                <td><strong>Replacement</strong></td>
+                <td>Where the seller agrees, we keep escrow and the seller re-fills the order.</td>
+                <td>Funds stay in escrow until the replacement is delivered.</td>
+              </tr>
+              <tr>
+                <td><strong>Claim rejected</strong></td>
+                <td>Evidence does not support the claim, or the issue falls outside Section 3.</td>
+                <td>Escrow auto-releases to the seller after the 24-hour window closes (no dispute raised).</td>
+              </tr>
+            </table>
+            <h3 class="legal-h3">Refund method &amp; timing</h3>
+            <ul class="legal-list">
+              <li>Wallet refunds show immediately and can be used for your next purchase;</li>
+              <li>Refunds to a card can take a few working days depending on the issuing bank;</li>
+              <li>We aim to complete case reviews within 5–10 working days. Complex or high-value cases can take
+                longer, and we will keep you updated.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 7. RELEASE TO SELLERS ────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="sellers">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">7. Release of funds to sellers</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">Unless a dispute pauses release or an investigation is underway, escrow funds are
+              <strong>automatically released 24 hours after delivery confirmation if no dispute is raised</strong>. You
+              never have to manually "confirm release" — the buyer's delivery code confirms the handover and the 24-hour
+              window keeps the money safe while any issue can still be raised.</p>
+            <div class="legal-callout"><strong>Escrow release vs payout:</strong> "Release" means escrow moving the order
+              value into the seller's Seli wallet — this happens automatically 24 hours after delivery confirmation if no
+              dispute is raised. "Payout" means transferring that wallet balance to the seller's linked bank account, paid
+              out automatically once released, generally within 24 hours.</div>
+            <p class="legal-p">Sellers receive escrow funds only when an order qualifies for release:</p>
+            <ul class="legal-list">
+              <li>The buyer confirmed the delivery with their delivery code <strong>and</strong> the 24-hour Buyer
+                Claims window passed without a dispute — release happens automatically at the end of that window; or</li>
+              <li>A dispute was resolved in the seller's favour (Section 6);</li>
+              <li>Where delivery could not be confirmed (for example an unattempted delivery), we may release funds
+                after a defined investigation period if tracking confirms delivery and no dispute was filed.</li>
+            </ul>
+            <p class="legal-p">Released proceeds are subject to the seller's commission of 5.5% and any applicable
+              fees (see the <a href="tos.html">Terms of Service</a>, Section 9) and are paid automatically, generally
+              within 24 hours.</p>
+            <p class="legal-p">If a seller's payout would be fraudulent, collusive or reverse the effect of a cash-out
+              scam, we may hold or reverse it in line with Sections 8–9 below and notify the seller.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 8. CHARGEBACKS & REVERSALS ───────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="reversals">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">8. Chargebacks &amp; reversals</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">If a buyer, the buyer's bank, or a payment provider initiates a chargeback or reversal
+              on a funded order, we will:</p>
+            <ul class="legal-list">
+              <li>Investigate the order and participate in the chargeback process with the payment provider,
+                including submitting delivery and claim evidence where we have it;</li>
+              <li>Deduct the reversed amount from the applicable escrow, refunds, or the seller's proceeds where the
+                reversal relates to an order that had already been paid out;</li>
+              <li>If amounts cannot be deducted in full, we may suspend payouts and, where material, pursue recovery
+                in line with the <a href="tos.html">Terms of Service</a> (set-off rights).</li>
+            </ul>
+            <p class="legal-p">Sellers whose orders are repeatedly reversed may lose eligibility for fast payouts and
+              have their store account reviewed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 9. DETERMINATIONS & DISPUTES ─────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="determinations">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">9. Determinations &amp; disputes</h2>
+            <hr class="legal-headrule">
+            <ul class="legal-list">
+              <li>Our resolution of a Buyer Claim is based on the evidence available and this policy;</li>
+              <li>If a buyer and seller agree on an outcome among themselves (for example a mutual cancellation), we
+                implement it where it complies with this policy;</li>
+              <li>If you disagree with a determination, contact <a href="mailto:support@seli.com.ng">support@seli.com.ng</a>
+                within 14 days with new evidence, and we will review;</li>
+              <li>Where a claim crosses fraud, criminal or regulatory territory, we may refer it to the appropriate
+                authority and withhold funds pending their direction;</li>
+              <li>Except where prohibited by law, our determination is final and binding between the parties,
+                subject to your rights under the dispute-resolution section of the <a href="tos.html">Terms of
+                Service</a> (Section 19).</li>
+            </ul>
+            <div class="legal-callout"><strong>Act fast:</strong> for non-delivery or card issues, raising your claim
+              early improves the evidence available (tracking, GPS logs, delivery codes) and shortens resolution time.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 10. OTHER POLICIES ────────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="other-policies">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">10. Relationship to other policies</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">This Escrow Policy forms part of the <a href="tos.html">Terms of Service</a>. Where
+              these two documents conflict, the Terms prevail except where this policy gives buyers a stronger
+              remedy, in which case the stronger remedy applies. How we handle the personal data involved in escrow
+              and claims is described in our <a href="privacy.html">Privacy Policy</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 11. CHANGES ──────────────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="changes">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">11. Changes to this policy</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">We may update this policy as our products, law or payment infrastructure evolve. Material
+              changes will be announced in the app or by email, with the updated version taking effect on the date
+              shown at the top of this page. Orders placed before the effective date are governed by the policy in
+              force at the time the order was placed unless the change is required by law.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 12. CONTACT ───────────────────────────────────────────────────────── -->
+  <section class="section-pad pt-0" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="legal-section">
+            <h2 class="legal-heading">12. Contact us</h2>
+            <hr class="legal-headrule">
+            <p class="legal-p">Questions about escrow, Buyer Protection or an ongoing claim:</p>
+            <ul class="legal-list">
+              <li><strong>Customer support</strong>: <a href="mailto:support@seli.com.ng">support@seli.com.ng</a></li>
+              <li><strong>In-app</strong>: Orders → "Raise a claim" or Support chat</li>
+              <li><strong>Data privacy</strong>: <a href="mailto:privacy@seli.com.ng">privacy@seli.com.ng</a></li>
+              <li><strong>Contact page</strong>: <a href="contact.html">seli.com.ng/contact.html</a></li>
+            </ul>
+            <p class="legal-p mb-0" style="text-align:right"><a href="#what-is-escrow" class="back-to-top">Back to top ↑</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+  <footer class="seli-footer">
+    <div class="container">
+      <div class="row g-5 pb-5">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-4">
+            <a class="" href="https://seli.com.ng/" target="_blank">
+              <img src="./images/seli_logo_200_white.png" alt="Seli">
+            </a>
+          </div>
+          <p class="footer-about">Nigeria's video-first social commerce platform. Discover, buy, sell, and earn — all
+            in one place.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Platform</div>
+          <ul class="footer-links">
+            <li><a href="market.html">Seli Market</a></li>
+            <li><a href="pilot.html">Seli Pilot</a></li>
+            <li><a href="shemi.html">Shemi AI</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Help</div>
+          <ul class="footer-links">
+            <li><a href="https://help.seli.com.ng/" target="_blank" rel="noopener">Help Center</a></li>
+            <li><a href="market.html">Open a store</a></li>
+            <li><a href="https://help.seli.com.ng/seli-market/opening-a-store.html" target="_blank" rel="noopener">Merchant guide</a></li>
+            <li><a href="https://help.seli.com.ng/seli-market/verified-seller-program.html" target="_blank" rel="noopener">Verified Seller</a></li>
+            <li><a href="pilot.html">Become a Pilot</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html">About Seli</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Legal</div>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="escrow-policy.html">Escrow Policy</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <span class="footer-copy">© 2026 Seli Trading Company. All rights reserved.</span>
+          <div class="footer-flags d-flex gap-2 align-items-center">
+            <span class="flag-pill">🇳🇬 Nigeria</span>
+            <span class="footer-copy" style="opacity:0.9">· More countries coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+
+</html>
