@@ -196,5 +196,8 @@
   lgMatch.addEventListener('change', rebind);
   reduceMotion.addEventListener('change', rebind);
 
+  /* Display current year */
+  document.getElementById('year').textContent = new Date().getFullYear();
+  
   boot();
 })();
