@@ -271,6 +271,7 @@ img {
 .seli-nav .navbar-collapse.collapsing .nav-link,
 .seli-nav .navbar-collapse.show .nav-link {
   padding: 12px 14px 12px 12px;
+  border-bottom: 0 !important;
 }
 
 .seli-nav .navbar-collapse.show {
@@ -1609,8 +1610,14 @@ img {
   animation: seliCookieIn 0.35s ease both;
 }
 @keyframes seliCookieIn {
-  from { transform: translateY(24px); opacity: 0; }
-  to   { transform: translateY(0);    opacity: 1; }
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .seli-cookie-banner.is-hidden {
   display: none; /* Hide without animation when a choice already exists */
